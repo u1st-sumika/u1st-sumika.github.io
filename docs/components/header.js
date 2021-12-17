@@ -161,20 +161,27 @@ header {
     }
 
     .bottom_nav_sp li {
-        display: table;
+        display: block;
         table-layout: fixed;
         width: 100%;
-        padding: 5px;
+        height: 80px;
         list-style: none;
         text-align: center;
     }
 
-    .bottom_nav_sp a span {
+    .bottom_nav_sp_anchor {
         display: block;
-        font-size: 12px;
+        width: 100%;
+        height: 80px;
+        padding-top: 15.4px;
+        padding-bottom: 15.4px;
     }
 
-    .bottom_nav_sp span {
+    .bottom_nav_sp_anchor span {
+        display: block;
+        font-size: 12px;
+        width: 100%; /*added*/
+        height: 100%; /*added*/
         margin-top: 8px;
     }
 
@@ -233,23 +240,23 @@ header {
 <div class="bottom_nav_sp_container">
 <ul class="bottom_nav_sp">
     <li>
-        <a href="home.html"><img src="images/nav_icon/home.png" /><br>
+        <a class="bottom_nav_sp_anchor" href="home.html"><img src="images/nav_icon/home.png" /><br>
             <span class="icon_name">HOME</span></a>
     </li>
     <li>
-        <a href="news.html"><img src="images/nav_icon/news.png" /><br>
+        <a class="bottom_nav_sp_anchor" href="news.html"><img src="images/nav_icon/news.png" /><br>
             <span class="icon_name">NEWS</span></a>
     </li>
     <li>
-        <a href="process.html"><img src="images/nav_icon/iteration.png" /><br>
+        <a class="bottom_nav_sp_anchor" href="process.html"><img src="images/nav_icon/iteration.png" /><br>
             <span class="icon_name">PROCESS</span></a>
     </li>
     <li>
-        <a href="portfolio.html"><img src="images/nav_icon/portfolio.png" /><br>
+        <a class="bottom_nav_sp_anchor" href="portfolio.html"><img src="images/nav_icon/portfolio.png" /><br>
             <span class="icon_name">PORTFOLIO</span></a>
     </li>
     <li>
-        <a href="contact.html"><img src="images/nav_icon/phone.png" /><br>
+        <a class="bottom_nav_sp_anchor" href="contact.html"><img src="images/nav_icon/phone.png" /><br>
             <span class="icon_name">CONTACT</span></a>
     </li>
 </ul>
